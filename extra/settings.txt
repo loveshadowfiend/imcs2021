@@ -1,0 +1,4 @@
+#define MAX_CUSTOMER_TIME  5
+#define MAX_CASHIER_QUEUE  5
+#define MAX_CASHIERS       5
+#define MAX_NEXT_CUSTOMERS 5

@@ -65,6 +65,7 @@ struct cashier {
 };
 
 int main() {
+    setlocale(LC_ALL, "");
     srand(time(0));
     int t = 0, gameover = 0, 
         happy = 0, // людей обслужено
@@ -98,7 +99,7 @@ int main() {
                 remi[i]->busy = '-';
             }
         }
-        //  интерфейс
+        //  вывод
         std::cout << "супермаркет реми ♡\n\n";
         for (int i = 0; i < remi.size(); i++) {
             std::cout << i+1 << " " << (i+1 > 9 ? " " : "  ") << remi[i]->busy << "   ";
